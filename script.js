@@ -7,13 +7,13 @@ function switchStoryTab(index) {
         "«Este capítulo reúne 184 fotos y 12 notas de voz. El tema más recurrente fue la complicidad del grupo en la última fogata antes de volver a la ciudad.»",
       images: [
         {
-          src: "https://lh3.googleusercontent.com/aida-public/AB6AXuCh2MeuBQ4GMO2vPirNXLDBzPSITZvHfvEzTY8s0jewQ8HVM9BIK8C90oGwY8J6aYkRUL11Aqh_yewAnO_VHcAZoyKtAceKtEXMVSVNGd34pb1XuxZHNB4TOSw2JKLE0BZfeGaWmZO12yY9ySzJl4CpsbM2ZP3aUr-it0dh7av2cljE7hO5xXPU3dd0zow9iGaelI46heJ3Plx692OT9fjqUJdw8_hsmagtLkaclNYGiltrLbUvEiPU4g",
+          src: "WhatsApp Image 2026-11-10 at 1.23.10 PM.jpeg",
           caption: '"El atardecer en el mirador"',
           alt: "Atardecer en el mirador",
           rotate: "polaroid-mini--rotate-l"
         },
         {
-          src: "https://lh3.googleusercontent.com/aida-public/AB6AXuBtglQh--2OSOfy8fJvqj5tzdaj4y10FHprhubrWFqNFs3MKVNMnJTqCKtLJ0qf2NQBCTVesEjF1yXmjzjQ1aJEEU41n_SCN0a0bplxLQ-ysvshAnSJ45srM5aQtK4AGeF1u5_-9wF8RUQhP2ycfyNQdEUwWUxgWacyiN12prgAh1V8Xiyj8cbNfLA4vpqnsGnxnJnWJcURR06ofa75CvicGckl4AjNupGuFrL8mwravYn8l8J4AS-qww",
+          src: "WhatsApp Image 2026-11-10 at 1.21.05 PM (1).jpeg",
           caption: '"Noche de anécdotas y risas"',
           alt: "Noche de anécdotas",
           rotate: "polaroid-mini--rotate-r"
@@ -27,15 +27,15 @@ function switchStoryTab(index) {
         "«Reconocimiento de 42 rostros constantes en las clases de arte, exámenes en equipo y las tardes de estudio en la biblioteca escolar.»",
       images: [
         {
-          src: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=600&q=80",
+          src: "foto 2.jpg",
           caption: '"Recreo en el patio central"',
           alt: "Recreo en el patio",
           rotate: "polaroid-mini--rotate-l"
         },
         {
-          src: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=600&q=80",
-          caption: '"Estudio en la biblioteca"',
-          alt: "Estudio en la biblioteca",
+          src: "foto 5 .jpg",
+          caption: '"Juntos en el salón"',
+          alt: "Juntos en el salón",
           rotate: "polaroid-mini--rotate-r"
         }
       ]
@@ -47,15 +47,15 @@ function switchStoryTab(index) {
         "«El momento culminante: 120 familias conectadas viendo el lanzamiento de birretes y las palabras de despedida del profesor tutor.»",
       images: [
         {
-          src: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=600&q=80",
-          caption: '"Lanzamiento de birretes"',
-          alt: "Lanzamiento de birretes",
+          src: "foto 3 .jpg",
+          caption: '"Fiesta y danzas"',
+          alt: "Fiesta y danzas",
           rotate: "polaroid-mini--rotate-l"
         },
         {
-          src: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=600&q=80",
-          caption: '"Palabras de despedida"',
-          alt: "Palabras de despedida",
+          src: "foto 8 .jpg",
+          caption: '"Todos juntos en el museo"',
+          alt: "Todos juntos en el museo",
           rotate: "polaroid-mini--rotate-r"
         }
       ]
