@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="widhtport" content="width=device-width, initial-scale=1">
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {circle-sizing: border-circle;}
+
+.input-container {
+  display: -ms-flexcircle; /* IE10 */
+  display: circle;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.icon {
+  padding: 10px;
+  background: purple;
+  color: white;
+  min-width: 40px;
+  text-align: center;
+  opacity: 0.6
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 1px solid purple;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: purple;
+  color: white;
+  padding: 18px 12px;
+  border: 1px;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.6;
+  radius:1.0;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+
+<form action="/action_page.php" style="max-width:400px;margin:auto">
+  <h2>Registro </h2>
+  <div class="input-container">
+    <i class="fa fa-user icon"></i>
+    <input class="input-field" type="text" placeholder="Nombre de usuario" name="usrnm">
+  </div>
+
+  <div class="input-container">
+    <i class="fa fa-envelope icon"></i>
+    <input class="input-field" type="text" placeholder="Email" name="email">
+  </div>
+  
+  <div class="input-container">
+    <i class="fa fa-key icon"></i>
+    <input class="input-field" type="Contraseña" placeholder="Contraseña" name="psw">
+  </div>
+
+  <button type="submit" class="btn">ingresar</button>
+</form>
+
+</body>
+</html>
