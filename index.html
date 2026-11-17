@@ -2,508 +2,392 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="web_standard" name="shell-type">
-  <title>Recuerdos  - D'COUSS Promoción 2026</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="D'COUSS Promoción 2026 — Diferentes corazones, un solo sentimiento. Recuerdos de un año inolvidable.">
+  <meta name="theme-color" content="#0b0f0d">
+  <title>Recuerdos — D'COUSS Promoción 2026</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,300..500,0..1,0&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="styles.css">
-
+  <link rel="preload" as="image" href="viaje15.jpeg" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
 
   <!-- HEADER -->
-  <header class="header">
+  <header class="header" id="header">
     <div class="header__container">
-      <div class="brand">
-        <img alt="Recuerdos " class="brand__logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuevwyZ02Nd5Xh40QJ4jVnxm_548JCFemMay7zhNx193ikI6m_11fLhihIp6c9KAbvkfsE_Ae8PR4k0KhUuVl6JGE6IaT2YRdKYWSN3H_hVZSp_OR3Vnef-Xl8pkTcdf9YNVRTqc8igWUQ7Wec_EQRdZ52A_tkTiMAZ-2B_RrqXWMNkg83wLC0ho45Jhjq2C6a_6_Qy6wjCWHlfKavau6eUj1GXN5TtXYB5u1Dc1LjHMs0XBgNaSroog">
-        <div class="brand__text">
+      <a class="brand" href="#inicio" aria-label="D'COUSS — inicio">
+        <span class="brand__mark" aria-hidden="true">DC</span>
+        <span class="brand__text">
           <span class="brand__name">Recuerdos 2026</span>
-          <span class="brand__sub">D'COUSS Promoción 2026</span>
-        </div>
-      </div>
+          <span class="brand__sub">D'COUSS Promoción</span>
+        </span>
+      </a>
 
-      <nav class="nav">
-        <a aria-current="page" data-path="inicio" href="#">Inicio</a>
-        <a data-path="como-funciona" href="Nosotros">Nosotros</a>
-        <a data-path="funciones" href="#">Funciones</a>
-        <a data-path="historias" href="#">Historias</a>
-        <a data-path="preguntas-frecuentes" href="#">Preguntas frecuentes</a>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a aria-current="page" data-path="inicio" href="#inicio">Inicio</a>
+        <a data-path="nosotros" href="#nosotros">Nosotros</a>
+        <a data-path="como-funciona" href="#como-funciona">Funciones</a>
+        <a data-path="historias" href="#historias">Historias</a>
+        <a data-path="preguntas-frecuentes" href="#preguntas-frecuentes">Preguntas frecuentes</a>
+        <a class="nav__mobile-only" href="perfil.html">Perfil</a>
       </nav>
 
       <div class="header__actions">
-        <a class="btn btn--primary btn--sm" data-path="comenzar" href="#">Comenzar</a>
-        <div class="avatar">
-          <a href="perfil.html" class="btn">
-    <button type="button">Perfil</button>
-</a>
-        </div>
+        <a class="btn btn--ghost btn--sm header__profile" href="perfil.html">
+          <span class="material-symbols-outlined" aria-hidden="true">person</span>
+          <span>Perfil</span>
+        </a>
+        <a class="btn btn--primary btn--sm" data-path="comenzar" href="#comenzar">Comenzar</a>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span>
+        </button>
       </div>
     </div>
   </header>
 
   <main>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
-      <div class="hero__glow hero__glow--left"></div>
-      <div class="hero__glow hero__glow--right"></div>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero__media" aria-hidden="true">
+        <img src="viaje15.jpeg" alt="" fetchpriority="high">
+      </div>
+      <div class="hero__shade" aria-hidden="true"></div>
 
-      <div class="container">
-        <div class="hero__grid">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <button class="play" type="button" data-open-video aria-label="Ver los videos de la promoción">
+            <span class="material-symbols-outlined icon-filled" aria-hidden="true">play_arrow</span>
+          </button>
 
-          <div class="hero__content">
-            <div class="badge">
-              <span class="badge__dot"></span>
-              <span> D'COUSS 2026</span>
-            </div>
+          <span class="hero__eyebrow">D'COUSS · Promoción 2026</span>
+          <h1 class="hero__title">D'COUSS<span>.</span></h1>
+          <p class="hero__tagline">Diferentes corazones, <em>un solo sentimiento.</em></p>
+          <p class="hero__description">Recuerdos de un año inolvidable.</p>
 
-            <div class="hero__titles">
-              <h1 class="hero__title">D'COUSS.</h1>
-              <p class="hero__subtitle">promoción 2026.</p>
-            </div>
-<p class="hero__tagline">Diferentes corazones, un solo sentimiento.</p>
-        
-            <p class="hero__description">
-              RECUERDOS DE UN AÑO INOLVIDABLE
-            </p>
-
-            <div class="hero__cta-group">
-              <a class="btn btn--primary btn--lg" href="#comenzar">
-                <span class="material-symbols-outlined icon-filled">auto_awesome</span>
-                <span>Comenzar ahora</span>
-              </a>
-              
-                
-              </a>
-            </div>
-
-            <div class="hero__trust">
-              <div class="avatars">
-                <div class="avatar-badge avatar-badge--secondary">DC</div>
-                <div class="avatar-badge avatar-badge--primary">26</div>
-                <div class="avatar-badge avatar-badge--tertiary">AI</div>
-              </div>
-              <p><strong>+20 alumnos y familias</strong> sincronizados</p>
-            </div>
+          <div class="hero__cta-group">
+            <a class="btn btn--primary btn--lg" href="#comenzar">
+              <span class="material-symbols-outlined icon-filled" aria-hidden="true">auto_awesome</span>
+              <span>Comenzar ahora</span>
+            </a>
+            <a class="btn btn--glass btn--lg" href="#historias">Ver la galería</a>
           </div>
 
-          <div class="hero__visual">
-            <div class="visual-stack">
-
-              <div class="visual-main">
-                <img alt="Ceremonia de graduación" src="foto 3 .jpg">
-                <div class="visual-main__overlay"></div>
-                <div class="visual-main__info">
-                  <div>
-                    <span class="visual-main__eyebrow">D'COUSS Promoción 2026</span>
-                    <p class="visual-main__title">Momentos inolvidables
-                  </div>
-                  
-              </div>
-              <div class="polaroid polaroid--top-left">
-                <div class="polaroid__img">
-                  <img alt="Último Deporte" src="foto 4 .jpg">
-                </div>
-                <div class="polaroid__caption">
-                  <span class="polaroid__title">Último Deporte '26</span>
-                  <span class="polaroid__tag">huamanga
-                </div>
-              </div>
-
-              <div class="polaroid polaroid--bottom-right">
-                <div class="polaroid__img polaroid__img--audio">
-                  <img alt="VISITA AL MUSEO" src="foto 6 .jpg"
-                  >
-                    <span class="audio-tag__dot"></span> 
-                  </div>
-                </div>
-                <div class="polaroid__caption polaroid__caption--stack">
-                  <span class="polaroid__title">Anuario &amp; Dedicatorias</span>
-                  <span class="polaroid__sub">Voz y transcripción lista</span>
-                </div>
-              </div>
-
-              <div class="center-tag">
-                <span class="material-symbols-outlined icon-filled">bookmark</span>
-                <span>Cápsula Inmutable 2026</span>
-              </div>
-
-            </div>
-          </div>
-
+          <dl class="stats">
+            <div><dt>Fotografías</dt><dd>27</dd></div>
+            <div><dt>Videos</dt><dd>04</dd></div>
+            <div><dt>Integrantes</dt><dd>06</dd></div>
+            <div><dt>Promoción</dt><dd>2026</dd></div>
+          </dl>
         </div>
+
+        <ol class="hero__chapters">
+          <li><a href="#historias" data-tab="0"><span class="num">01</span><span>Viajes de promoción<br><small>Huancapi y alrededores</small></span></a></li>
+          <li><a href="#historias" data-tab="1"><span class="num">02</span><span>Último año<br><small>en las aulas</small></span></a></li>
+          <li><a href="#nosotros"><span class="num">03</span><span>Seis corazones<br><small>nuestro equipo</small></span></a></li>
+          <li><a href="#comenzar"><span class="num">04</span><span>Cápsula<br><small>inmutable 2026</small></span></a></li>
+        </ol>
       </div>
     </section>
 
     <!-- HOW IT WORKS -->
     <section class="section" id="como-funciona">
-      <div class="container">
-        <div class="section__head">
-          <span class="eyebrow">Ultimo año juntos</span>
-          <h2 class="section__title">La magia de preservar lo inolvidable</h2>
+      <div class="container steps-layout">
+        <header class="steps-layout__intro reveal">
+          <span class="eyebrow">Último año juntos</span>
+          <h2 class="section__title">La magia de preservar lo <em>inolvidable</em></h2>
           <p class="section__lead">Tres pasos intuitivos para transformar carpetas dispersas en un museo vivo de tu promoción.</p>
+        </header>
+
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <figure class="timeline__photo"><img src="viaje3.jpg" alt="La promoción frente a una cascada" loading="lazy"></figure>
+            <div class="timeline__body">
+              <span class="timeline__num">01</span>
+              <h3>Sube tus recuerdos</h3>
+              <p>Fotos de celulares, videos de festivales, audios de WhatsApp y cartas escaneadas en un único buzón protegido.</p>
+              <div class="tags">
+                <span class="tag">JPEG &amp; RAW</span>
+                <span class="tag">4K Video</span>
+                <span class="tag">Notas de voz</span>
+                <span class="tag">Escaneos</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline__item reveal">
+            <figure class="timeline__photo"><img src="alua4.jpg" alt="Compañeros en el aula" loading="lazy"></figure>
+            <div class="timeline__body">
+              <span class="timeline__num">02</span>
+              <h3>La IA los organiza</h3>
+              <p>Reconoce rostros, fechas, locaciones y emociones para tejer un árbol biográfico ordenado de forma totalmente automática.</p>
+              <div class="mini-panel">
+                <span class="mini-panel__left"><span class="pulse-dot"></span>Indexación semántica</span>
+                <span class="mini-panel__right">99.4% precisión</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline__item reveal">
+            <figure class="timeline__photo"><img src="viaje9.jpeg" alt="Almuerzo de la promoción" loading="lazy"></figure>
+            <div class="timeline__body">
+              <span class="timeline__num">03</span>
+              <h3>Revive tus historias</h3>
+              <p>Genera anuarios dinámicos, cápsulas de tiempo interactivas y documentales cinematográficos listos para compartir con toda la familia.</p>
+              <a class="link-row" href="#historias">
+                <span>Línea de vida 2020 — 2026</span>
+                <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+              </a>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ESSENCE -->
+    <section class="section section--deep">
+      <div class="container essence">
+        <div class="essence__collage reveal">
+          <figure class="essence__main">
+            <img src="aula5.jpg" alt="La promoción bajo el lema «Y si no es eterno que sea inolvidable»" loading="lazy">
+          </figure>
+          <figure class="essence__float">
+            <img src="viaje6.jpeg" alt="Fogata nocturna durante el viaje" loading="lazy">
+            <figcaption>La última fogata</figcaption>
+          </figure>
+          <blockquote class="essence__quote">
+            <p>«El valor de una memoria no está en la cantidad de fotos, sino en cómo te hace sentir al revivirla.»</p>
+            <cite>— Filosofía Recuerdos D'COUSS</cite>
+          </blockquote>
         </div>
 
-        <div class="steps">
-          <div class="step-card">
-            <div class="step-card__number">01</div>
-            <div class="icon-box">
-              <span class="material-symbols-outlined icon-secondary">cloud_upload</span>
-            </div>
-            <h3>1. Sube tus recuerdos</h3>
-            <p>Fotos de celulares, videos de festivales, audios de WhatsApp y cartas escaneadas en un único buzón protegido.</p>
-            <div class="tags">
-              <span class="tag">JPEG &amp; RAW</span>
-              <span class="tag">4K Video</span>
-              <span class="tag">Notas de Voz</span>
-              <span class="tag">Escaneos</span>
-            </div>
-          </div>
-
-          <div class="step-card">
-            <div class="step-card__number">02</div>
-            <div class="icon-box">
-              <span class="material-symbols-outlined icon-tertiary">hub</span>
-            </div>
-            <h3>2. La IA los organiza</h3>
-            <p>Reconoce rostros, fechas, locaciones y emociones para tejer un árbol biográfico ordenado de forma totalmente automática.</p>
-            <div class="mini-panel">
-              <div class="mini-panel__left">
-                <span class="pulse-dot"></span>
-                <span>Indexación Semántica</span>
-              </div>
-              <span class="mini-panel__right">99.4% precisión</span>
-            </div>
-          </div>
-
-          <div class="step-card">
-            <div class="step-card__number">03</div>
-            <div class="icon-box">
-              <span class="material-symbols-outlined">auto_stories</span>
-            </div>
-            <h3>3. Revive tus historias</h3>
-            <p>Genera anuarios dinámicos, cápsulas de tiempo interactiva y documentales cinematográficos listos para compartir con toda la familia.</p>
-            <div class="link-row">
-              <span>Línea de vida 2020-2026</span>
-              <span class="material-symbols-outlined link-row__arrow">arrow_forward</span>
-            </div>
-          </div>
+        <div class="essence__content reveal">
+          <span class="eyebrow">Nuestra esencia</span>
+          <h2 class="section__title">Hay momentos que no queremos <em>olvidar.</em></h2>
+          <p class="section__lead">Una sonrisa furtiva en clase, una voz temblorosa en la despedida, el abrazo en la meta del viaje o la mirada de tus padres al recibir tu recordatorio.</p>
+          <p class="essence__text">Una etapa donde pasamos buenos y malos momentos, que no volverán, y de la que solo diremos: <em>«en algún momento fuimos ellos».</em></p>
+          <a class="btn btn--outline" href="#comenzar">
+            <span>Guardar un recuerdo</span>
+            <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- EMOTIONAL IMPACT -->
-    <section class="section section--alt">
+    <!-- TEAM -->
+    <section class="section" id="nosotros">
       <div class="container">
-        <div class="impact">
-          <div class="impact__media">
-            <div class="impact__image">
-              <img alt="Familia reviviendo recuerdos" src="WhatsApp Image 2026-11-10 at 1.23.11 PM (1).jpeg">
-            </div>
-            <div class="impact__quote">
-              <p>«El valor de una memoria no está en la cantidad de fotos, sino en cómo te hace sentir al revivirla.»</p>
-              <span>— Filosofía Recuerdos D'COUSS</span>
-            </div>
+        <header class="section__head section__head--split reveal">
+          <div>
+            <span class="eyebrow">Conoce a nuestro equipo</span>
+            <h2 class="section__title">Nosotros</h2>
           </div>
+          <p class="section__lead">Somos seis estudiantes con ideas, talentos y objetivos en común, comprometidos con la innovación y el desarrollo de soluciones tecnológicas que preserven nuestros mejores recuerdos.</p>
+        </header>
 
-          <div class="impact__content">
-            <span class="eyebrow eyebrow--tertiary">Nuestra Esencia</span>
-            <h2 class="section__title">Hay momentos que no queremos olvidar.</h2>
-            <p class="section__lead">Una sonrisa furtiva en clase, una voz temblorosa en la despedida, el abrazo en la meta del viaje o la mirada de tus padres al recibir tu recordatorio.</p>
-            <p>Una etapa donde pasamos buenos y malos momentos, donde no volveran y solo diremos " en algun momento fuimos ellos ".</p>
-            <a class="btn btn--primary" href="#comenzar">
-            
-              <span class="material-symbols-outlined">arrow_forward</span>
-            </a>
-          </div>
+        <div class="team">
+          <article class="member reveal">
+            <figure class="member__photo"><img src="marcia.jpeg" alt="Marcia Chávez Ramos" loading="lazy"></figure>
+            <span class="member__num">01</span>
+            <div class="member__info">
+              <h3>Marcia Chávez Ramos</h3>
+              <span class="member__role">Psicología</span>
+              <p>Apasionada por ayudar a las personas a superar desafíos y alcanzar sus metas.</p>
+            </div>
+          </article>
+
+          <article class="member reveal">
+            <figure class="member__photo member__photo--empty" aria-hidden="true"><span>EM</span></figure>
+            <span class="member__num">02</span>
+            <div class="member__info">
+              <h3>Evelyn Mauricio Borda</h3>
+              <span class="member__role">Veterinaria</span>
+              <p>Interesada en el bienestar animal y la salud de las mascotas.</p>
+            </div>
+          </article>
+
+          <article class="member reveal">
+            <figure class="member__photo"><img src="karol.jpeg" alt="Karol Prado Mucha" loading="lazy"></figure>
+            <span class="member__num">03</span>
+            <div class="member__info">
+              <h3>Karol Prado Mucha</h3>
+              <span class="member__role">Turismo</span>
+              <p>Apasionada por descubrir nuevos lugares y compartir experiencias únicas.</p>
+            </div>
+          </article>
+
+          <article class="member reveal">
+            <figure class="member__photo member__photo--empty" aria-hidden="true"><span>CO</span></figure>
+            <span class="member__num">04</span>
+            <div class="member__info">
+              <h3>Camila Ochoa Aquino</h3>
+              <span class="member__role">Cosmiatría</span>
+              <p>Apasionada por el cuidado de la piel y la belleza natural.</p>
+            </div>
+          </article>
+
+          <article class="member reveal">
+            <figure class="member__photo"><img src="nilda.jpeg" alt="Nilda Quispe Cancho" loading="lazy"></figure>
+            <span class="member__num">05</span>
+            <div class="member__info">
+              <h3>Nilda Quispe Cancho</h3>
+              <span class="member__role">Psicología</span>
+              <p>Interesada en comprender el comportamiento humano y ayudar a las personas a superar sus dificultades.</p>
+            </div>
+          </article>
+
+          <article class="member reveal">
+            <figure class="member__photo"><img src="esmeralda.jpeg" alt="Esmeralda Valdez Aguirre" loading="lazy"></figure>
+            <span class="member__num">06</span>
+            <div class="member__info">
+              <h3>Esmeralda Valdez Aguirre</h3>
+              <span class="member__role">Agronomía</span>
+              <p>Apasionada por los animales y la naturaleza.</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- FEATURES GRID -->
-    
-<section class="nosotros" id="nosotros">
-  <div class="container">
+    <!-- GALLERY / STORIES -->
+    <section class="section section--deep" id="historias">
+      <div class="container">
+        <header class="section__head section__head--split reveal">
+          <div>
+            <span class="eyebrow">Narrativa asistida</span>
+            <h2 class="section__title">De cientos de archivos a una historia <em>con sentido.</em></h2>
+          </div>
+          <div>
+            <p class="section__lead">El desorden fotográfico abruma. Nuestra IA no almacena datos fríos: entrelaza testimonios, música y fechas para redactar la crónica de tu juventud.</p>
+            <p class="storyteller__count" id="story-count">Fotografías organizadas en tres álbumes para volver a vivir cada momento.</p>
+          </div>
+        </header>
 
-    <div class="section__head">
-      <span class="eyebrow">Conoce a nuestro equipo</span>
-      <h2 class="section__title">Nosotros</h2>
-      <p class="section__lead">
-        Somos seis estudiantes con ideas, talentos y objetivos en común,
-        comprometidos con la innovación y el desarrollo de soluciones
-        tecnológicas que preserven nuestros mejores recuerdos.
-      </p>
-    </div>
-
-    <div class="nosotros-grid">
-
-      <article class="nosotros-card">
-        <img
-          src="WhatsApp Image 2026-11-10 at 1.21.05 PM.jpeg"
-          alt="Fotografía del integrante 1"
-          class="nosotros-img"
-        >
-        <div class="nosotros-info">
-          <span class="nosotros-numero">01</span>
-          <h3>Marcia Chavez Ramos</h3>
-          <h4>psicologa</h4>
-          <p>
-            Apasionada por ayudar a las personas a superar desafios y alcanzar sus metas.
-          </p>
-        </div>
-      </article>
-
-      <article class="nosotros-card">
-        <img
-          src="WhatsApp Image 2026-11-10 at 1.21.22 PM.jpeg"
-          alt="Fotografía de la integrante 2"
-          class="nosotros-img"
-        >
-        <div class="nosotros-info">
-          <span class="nosotros-numero">02</span>
-          <h3>Evelyn Mauricio Borda</h3>
-          <h4>Veterinaria</h4>
-          <p>
-            Interesada en el bienestar animal y la salud de las mascotas.
-          </p>
-        </div>
-      </article>
-
-      <article class="nosotros-card">
-        <img
-          src="WhatsApp Image 2026-11-10 at 1.22.03 PM.jpeg"
-          alt="Fotografía del integrante 3"
-          class="nosotros-img"
-        >
-        <div class="nosotros-info">
-          <span class="nosotros-numero">03</span>
-          <h3>Karol Prado Mucha</h3>
-          <h4>turismo</h4>
-          <p>
-            Apasionada por descubrir nuevos lugares y compartir experiencias únicas.
-          </p>
-        </div>
-      </article>
-
-      <article class="nosotros-card">
-        <img
-          src="WhatsApp Image 2026-11-10 at 1.26.30 PM.jpeg"
-          alt="Fotografía de la integrante 4"
-          class="nosotros-img"
-        >
-        <div class="nosotros-info">
-          <span class="nosotros-numero">04</span>
-          <h3>Camila Ochoa Aquino</h3>
-          <h4>cosmetria</h4>
-          <p>
-            Apasionada por el cuidado de la piel y la belleza natural.
-          </p>
-        </div>
-      </article>
-
-      <article class="nosotros-card">
-        <img
-          src="WhatsApp Image 2026-11-10 at 1.21.07 PM (1).jpeg"
-          alt="Fotografía del integrante 5"
-          class="nosotros-img"
-        >
-        <div class="nosotros-info">
-          <span class="nosotros-numero">05</span>
-          <h3>Nilda Quispe Cancho</h3>
-          <h4>Psicología</h4>
-          <p>
-            Interesada en comprender el comportamiento humano y ayudar a las personas a superar sus dificultades.
-          </p>
-        </div>
-      </article>
-
-      <article class="nosotros-card">
-        <img
-          src="WhatsApp Image 2026-11-10 at 1.21.08 PM.jpeg"
-          alt="Fotografía de la integrante 6"
-          class="nosotros-img"
-        >
-        <div class="nosotros-info">
-          <span class="nosotros-numero">06</span>
-          <h3> Esmeralda Valdez Aguirre</h3> </h3>
-          <h4>agronomia</h4>
-          <p>
-            Apasionada por los animales y la naturaleza.
-          </p>
-        </div>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-
-    <!-- AI STORYTELLER -->
-    <section class="section section--tinted" id="historias">
-  <div class="container">
-    <div class="storyteller">
-
-      <div class="storyteller__side">
-        <span class="pill">Narrativa Asistida</span>
-        <h2 class="section__title">De cientos de archivos a una historia con sentido.</h2>
-        <p class="section__lead">El desorden fotográfico abruma. Nuestra IA no almacena datos fríos: entrelaza testimonios, música y fechas para redactar la crónica de tu juventud.</p>
-
-        <div class="tabs" id="category-tabs">
-          <button class="tab tab--active" onclick="switchStoryTab(0)">
-            <span class="tab__left">
-              <span class="material-symbols-outlined icon-secondary">flight_takeoff</span>
-              <span>Viajes de Promoción</span>
+        <div class="albums" id="category-tabs" role="tablist" aria-label="Álbumes de fotos">
+          <button class="album tab--active" type="button" role="tab" aria-selected="true" aria-controls="tab-panel" onclick="switchStoryTab(0)">
+            <img src="viaje13.jpeg" alt="" loading="lazy">
+            <span class="album__label">
+              <span class="album__num">01</span>
+              <span class="album__title">Viajes de Promoción</span>
+              <span class="album__meta" data-album-count="0">— fotos</span>
             </span>
-            <span class="material-symbols-outlined">chevron_right</span>
           </button>
-
-          <button class="tab" onclick="switchStoryTab(1)">
-            <span class="tab__left">
-              <span class="material-symbols-outlined">school</span>
-              <span>Último Año en las Aulas</span>
+          <button class="album" type="button" role="tab" aria-selected="false" aria-controls="tab-panel" tabindex="-1" onclick="switchStoryTab(1)">
+            <img src="aula7.jpg" alt="" loading="lazy">
+            <span class="album__label">
+              <span class="album__num">02</span>
+              <span class="album__title">Último Año en las Aulas</span>
+              <span class="album__meta" data-album-count="1">— fotos</span>
             </span>
-            <span class="material-symbols-outlined">chevron_right</span>
           </button>
-
-          <button class="tab" onclick="switchStoryTab(2)">
-            <span class="tab__left">
-              <span class="material-symbols-outlined">celebration</span>
-              <span>Fiesta de Graduación</span>
+          <button class="album" type="button" role="tab" aria-selected="false" aria-controls="tab-panel" tabindex="-1" onclick="switchStoryTab(2)">
+            <img src="viaje14.jpeg" alt="" loading="lazy">
+            <span class="album__label">
+              <span class="album__num">03</span>
+              <span class="album__title">Nuestra Promoción</span>
+              <span class="album__meta" data-album-count="2">— fotos</span>
             </span>
-            <span class="material-symbols-outlined">chevron_right</span>
           </button>
         </div>
-      </div>
 
-      <div class="storyteller__panel">
-        <div class="panel">
+        <div class="panel" id="tab-panel" role="tabpanel">
           <div class="panel__head">
-            <div class="panel__head-left">
-              <div class="panel__icon">
-                <span class="material-symbols-outlined">auto_stories</span>
-              </div>
-              <div>
-                <h4 id="tab-title">Capítulo IV: La Ruta del Valle Sagrado</h4>
-                <span id="tab-meta">Octubre 2025 • 20 participantes</span>
-              </div>
+            <div>
+              <h3 id="tab-title">Capítulo I: Viajes y aventuras</h3>
+              <span id="tab-meta">Promoción 2026</span>
             </div>
-            <span class="panel__tag">Síntesis</span>
+            <p class="panel__quote">
+              <span class="material-symbols-outlined" aria-hidden="true">auto_stories</span>
+              <span id="tab-quote"></span>
+            </p>
           </div>
 
           <!-- El mosaico se rellena dinámicamente desde JS -->
-          <div class="panel__mosaic" id="tab-mosaic">
-            <div class="polaroid-mini polaroid-mini--rotate-l">
-              <div class="polaroid-mini__img">
-                <img alt="Atardecer en el mirador" src="WhatsApp Image 2026-11-10 at 1.23.10 PM.jpeg">
-              </div>
-              <p>"El atardecer en el mirador"</p>
-            </div>
-            <div class="polaroid-mini polaroid-mini--rotate-r">
-              <div class="polaroid-mini__img">
-                <img alt="Noche de anécdotas" src="WhatsApp Image 2026-11-10 at 1.21.05 PM (1).jpeg">
-              </div>
-              <p>"Noche de anécdotas y risas"</p>
-            </div>
-          </div>
-
-          <div class="panel__quote">
-            <span class="material-symbols-outlined icon-secondary">smart_toy</span>
-            <p id="tab-quote">«Este capítulo reúne 184 fotos y 12 notas de voz. El tema más recurrente fue la complicidad del grupo en la última fogata antes de volver a la ciudad.»</p>
-          </div>
+          <div class="panel__mosaic" id="tab-mosaic" aria-live="polite"></div>
+          <button class="btn btn--outline panel__more" id="mosaic-more" type="button" hidden>Ver todas las fotos</button>
         </div>
       </div>
-
-    </div>
-  </div>
-</section>
+    </section>
 
     <!-- TESTIMONIALS -->
     <section class="section">
       <div class="container">
-        <div class="section__head">
-          <span class="eyebrow">Comunidad y Gratitud</span>
-          <h2 class="section__title">La voz de quienes ya lo vivieron</h2>
+        <header class="section__head section__head--split reveal">
+          <div>
+            <span class="eyebrow">Comunidad y gratitud</span>
+            <h2 class="section__title">La voz de quienes ya lo vivieron</h2>
+          </div>
           <p class="section__lead">Familias y egresados que hoy disfrutan de sus memorias intactas y accesibles.</p>
-        </div>
+        </header>
 
-        <div class="testimonials">
-          <div class="testimonial">
-            <div class="stars">
-              <span class="material-symbols-outlined icon-filled">star</span>
-              <span class="material-symbols-outlined icon-filled">star</span>
-              <span class="material-symbols-outlined icon-filled">star</span>
-              <span class="material-symbols-outlined icon-filled">star</span>
-              <span class="material-symbols-outlined icon-filled">star</span>
-            </div>
-            <p class="testimonial__text">"Ahora puedo volver a ver los momentos que creía perdidos en teléfonos viejos. Es como tener nuestra historia escolar y familiar viva en un solo lugar."</p>
-            <div class="testimonial__author">
-              <div class="author-badge author-badge--secondary">SM</div>
-              <div>
-                <p class="author-badge__name">Sofía Mendoza</p>
-                <span class="author-badge__role">Promoción 2024</span>
+        <div class="voices reveal" id="voices" aria-roledescription="carrusel">
+          <div class="voices__track">
+            <figure class="voice is-active">
+              <div class="voice__card">
+                <div class="stars" aria-label="5 de 5 estrellas">★★★★★</div>
+                <blockquote>"Ahora puedo volver a ver los momentos que creía perdidos en teléfonos viejos. Es como tener nuestra historia escolar y familiar viva en un solo lugar."</blockquote>
+                <figcaption class="author">
+                  <span class="author__badge">SM</span>
+                  <span><strong>Sofía Mendoza</strong><small>Promoción 2024</small></span>
+                </figcaption>
               </div>
-            </div>
+              <div class="voice__photo"><img src="viaje12.jpeg" alt="Grupo en el mirador" loading="lazy"></div>
+            </figure>
+
+            <figure class="voice">
+              <div class="voice__card">
+                <div class="stars" aria-label="5 de 5 estrellas">★★★★★</div>
+                <blockquote>"Reunir las fotos de toda la promoción parecía imposible. La IA organizó más de 4,000 archivos en minutos sin que tuviéramos que perseguir a nadie."</blockquote>
+                <figcaption class="author">
+                  <span class="author__badge">MV</span>
+                  <span><strong>Mateo Valenzuela</strong><small>Presidente de Clase D'COUSS</small></span>
+                </figcaption>
+              </div>
+              <div class="voice__photo"><img src="aula1.jpg" alt="Compañeros con camisetas deportivas" loading="lazy"></div>
+            </figure>
+
+            <figure class="voice">
+              <div class="voice__card">
+                <div class="stars" aria-label="5 de 5 estrellas">★★★★★</div>
+                <blockquote>"Escuchar las notas de voz de mis mejores amigos junto a las fotos de nuestra graduación en la televisión de la sala nos hizo llorar de alegría a todos."</blockquote>
+                <figcaption class="author">
+                  <span class="author__badge">CA</span>
+                  <span><strong>Camila Arismendi</strong><small>Egresada &amp; Fotógrafa</small></span>
+                </figcaption>
+              </div>
+              <div class="voice__photo"><img src="viaje2.jpg" alt="Amigas en el río" loading="lazy"></div>
+            </figure>
           </div>
 
-          <div class="testimonial">
-            <div class="stars">
-              <span class="material-symbols-outlined icon-filled">star</span>
-              <span class="material-symbols-outlined icon-filled">star</span>
-              <span class="material-symbols-outlined icon-filled">star</span>
-              <span class="material-symbols-outlined icon-filled">star</span>
-              <span class="material-symbols-outlined icon-filled">star</span>
-            </div>
-            <p class="testimonial__text">"Reunir las fotos de toda la promoción parecía imposible. La IA organizó más de 4,000 archivos en minutos sin que tuviéramos que perseguir a nadie."</p>
-            <div class="testimonial__author">
-              <div class="author-badge author-badge--primary">MV</div>
-              <div>
-                <p class="author-badge__name">Mateo Valenzuela</p>
-                <span class="author-badge__role">Presidente de Clase D'COUSS</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial">
-            <div class="stars">
-              <span class="material-symbols-outlined icon-filled">star</span>
-              <span class="material-symbols-outlined icon-filled">star</span>
-              <span class="material-symbols-outlined icon-filled">star</span>
-              <span class="material-symbols-outlined icon-filled">star</span>
-              <span class="material-symbols-outlined icon-filled">star</span>
-            </div>
-            <p class="testimonial__text">"Escuchar las notas de voz de mis mejores amigos junto a las fotos de nuestra graduación en la televisión de la sala nos hizo llorar de alegría a todos."</p>
-            <div class="testimonial__author">
-              <div class="author-badge author-badge--tertiary">CA</div>
-              <div>
-                <p class="author-badge__name">Camila Arismendi</p>
-                <span class="author-badge__role">Egresada &amp; Fotógrafa</span>
-              </div>
-            </div>
+          <div class="voices__controls">
+            <button class="round-btn" type="button" data-voice="prev" aria-label="Testimonio anterior"><span class="material-symbols-outlined">arrow_back</span></button>
+            <div class="voices__dots" role="tablist" aria-label="Testimonios"></div>
+            <button class="round-btn" type="button" data-voice="next" aria-label="Testimonio siguiente"><span class="material-symbols-outlined">arrow_forward</span></button>
           </div>
         </div>
       </div>
     </section>
 
     <!-- FAQ -->
-    <section class="section section--alt" id="preguntas-frecuentes">
-      <div class="container container--narrow">
-        <div class="section__head">
-          <span class="eyebrow">Dudas Habituales</span>
+    <section class="section section--deep" id="preguntas-frecuentes">
+      <div class="container faq-layout">
+        <header class="reveal">
+          <span class="eyebrow">Dudas habituales</span>
           <h2 class="section__title">Preguntas frecuentes</h2>
-        </div>
+          <p class="section__lead">Todo lo que necesitas saber antes de guardar tu primer recuerdo.</p>
+        </header>
 
-        <div class="faq">
+        <div class="faq reveal">
           <details class="faq__item">
             <summary>
               <span>¿Quién tiene acceso a las fotos y videos subidos?</span>
-              <span class="material-symbols-outlined faq__icon">expand_more</span>
+              <span class="material-symbols-outlined faq__icon" aria-hidden="true">add</span>
             </summary>
             <p>Solo los miembros acreditados de la promoción D'COUSS 2026 y sus familiares invitados mediante enlace verificado. Tu privacidad es inquebrantable.</p>
           </details>
@@ -511,7 +395,7 @@
           <details class="faq__item">
             <summary>
               <span>¿Se pueden descargar los recuerdos en resolución original?</span>
-              <span class="material-symbols-outlined faq__icon">expand_more</span>
+              <span class="material-symbols-outlined faq__icon" aria-hidden="true">add</span>
             </summary>
             <p>Sí. Todo el material conserva su peso y nitidez original para que puedas imprimir álbumes físicos o conservarlos en discos de respaldo personal.</p>
           </details>
@@ -519,7 +403,7 @@
           <details class="faq__item">
             <summary>
               <span>¿Cómo funciona el resumen en video generado por IA?</span>
-              <span class="material-symbols-outlined faq__icon">expand_more</span>
+              <span class="material-symbols-outlined faq__icon" aria-hidden="true">add</span>
             </summary>
             <p>La inteligencia artificial detecta los mejores momentos, sincroniza la música adecuada y genera un cortometraje documental de la promoción listo para proyectarse en la fiesta final.</p>
           </details>
@@ -529,24 +413,24 @@
 
     <!-- FINAL CTA -->
     <section class="cta" id="comenzar">
-      <div class="cta__glow cta__glow--left"></div>
-      <div class="cta__glow cta__glow--right"></div>
+      <div class="cta__media" aria-hidden="true"><img src="viaje7.jpeg" alt="" loading="lazy"></div>
+      <div class="cta__shade" aria-hidden="true"></div>
 
-      <div class="container cta__content">
-        <span class="cta__pill">Cápsula Digital Inmortal</span>
-        <h2 class="cta__title">El tiempo pasa.<br>Tus recuerdos pueden quedarse.</h2>
+      <div class="container cta__content reveal">
+        <span class="eyebrow">Cápsula digital inmortal</span>
+        <h2 class="cta__title">El tiempo pasa.<br><em>Tus recuerdos pueden quedarse.</em></h2>
         <p class="cta__lead">Empieza a construir hoy la biblioteca de recuerdos de la Promoción D'COUSS 2026. Un legado de risas y hermandad que nunca se apagará.</p>
 
-        <button class="btn btn--secondary btn--xl">
-          <span class="material-symbols-outlined icon-filled">lock_open</span>
+        <a class="btn btn--primary btn--xl" href="perfil.html">
+          <span class="material-symbols-outlined icon-filled" aria-hidden="true">lock_open</span>
           <span>Guardar mi primer recuerdo</span>
-        </button>
+        </a>
 
-        <div class="cta__markers">
-          <span><span class="material-symbols-outlined">check_circle</span> Sin tarjeta de crédito</span>
-          <span><span class="material-symbols-outlined">check_circle</span> Acceso escolar oficial D'COUSS</span>
-          <span><span class="material-symbols-outlined">check_circle</span> Privacidad cifrada garantizada</span>
-        </div>
+        <ul class="cta__markers">
+          <li><span class="material-symbols-outlined" aria-hidden="true">check</span> Sin tarjeta de crédito</li>
+          <li><span class="material-symbols-outlined" aria-hidden="true">check</span> Acceso escolar oficial D'COUSS</li>
+          <li><span class="material-symbols-outlined" aria-hidden="true">check</span> Privacidad cifrada garantizada</li>
+        </ul>
       </div>
     </section>
 
@@ -556,38 +440,58 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__grid">
-
         <div class="footer__col footer__col--brand">
-          <div class="brand">
-            <img alt="Recuerdos AI Logo" class="brand__logo brand__logo--sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuevwyZ02Nd5Xh40QJ4jVnxm_548JCFemMay7zhNx193ikI6m_11fLhihIp6c9KAbvkfsE_Ae8PR4k0KhUuVl6JGE6IaT2YRdKYWSN3H_hVZSp_OR3Vnef-Xl8pkTcdf9YNVRTqc8igWUQ7Wec_EQRdZ52A_tkTiMAZ-2B_RrqXWMNkg83wLC0ho45Jhjq2C6a_6_Qy6wjCWHlfKavau6eUj1GXN5TtXYB5u1Dc1LjHMs0XBgNaSroog">
+          <a class="brand" href="#inicio">
+            <span class="brand__mark" aria-hidden="true">DC</span>
             <span class="brand__name">Recuerdos AI</span>
-          </div>
+          </a>
           <p>La cápsula de memoria inteligente para la promoción D'COUSS 2026. Preservando risas, viajes, anécdotas y emociones con elegancia archival y precisión cognitiva.</p>
         </div>
 
         <div class="footer__col">
           <span class="footer__title">Exploración</span>
-          <a data-path="inicio" href="#">Inicio</a>
-          <a data-path="como-funciona" href="#">Cómo funciona</a>
-          <a data-path="funciones" href="#">Funciones exclusivas</a>
-          <a data-path="historias" href="#">Galería de historias</a>
+          <a data-path="inicio" href="#inicio">Inicio</a>
+          <a data-path="como-funciona" href="#como-funciona">Cómo funciona</a>
+          <a data-path="nosotros" href="#nosotros">Nosotros</a>
+          <a data-path="historias" href="#historias">Galería de historias</a>
         </div>
 
         <div class="footer__col">
-          <span class="footer__title">Promoción D'COUSS 2026</span>
-          <a data-path="preguntas-frecuentes" href="#">Preguntas frecuentes</a>
-          <a data-path="comenzar" href="#">Acceso de estudiantes</a>
-          <span class="footer__note">Un legado digital diseñado para trascender generaciones.</span>
+          <span class="footer__title">Promoción 2026</span>
+          <a data-path="preguntas-frecuentes" href="#preguntas-frecuentes">Preguntas frecuentes</a>
+          <a data-path="comenzar" href="#comenzar">Acceso de estudiantes</a>
+          <a href="perfil.html">Mi perfil</a>
         </div>
-
       </div>
+
+      <p class="footer__wordmark" aria-hidden="true">D'COUSS</p>
 
       <div class="footer__bottom">
         <p>© 2026 Recuerdos AI — D'COUSS Promoción 2026. Tus recuerdos merecen durar para siempre.</p>
-        <span>Archival Memory Vault</span>
+        <span>Un legado digital diseñado para trascender generaciones.</span>
       </div>
     </div>
   </footer>
+
+  <!-- VIDEO MODAL -->
+  <dialog class="modal modal--video" id="video-modal" aria-label="Videos de la promoción">
+    <button class="modal__close round-btn" type="button" data-close aria-label="Cerrar"><span class="material-symbols-outlined">close</span></button>
+    <div class="modal__stage">
+      <video id="video-player" controls playsinline preload="metadata"></video>
+    </div>
+    <div class="video-list" id="video-list"></div>
+  </dialog>
+
+  <!-- LIGHTBOX -->
+  <dialog class="modal modal--lightbox" id="lightbox" aria-label="Visor de fotos">
+    <button class="modal__close round-btn" type="button" data-close aria-label="Cerrar"><span class="material-symbols-outlined">close</span></button>
+    <button class="lightbox__nav lightbox__nav--prev round-btn" type="button" data-lb="prev" aria-label="Foto anterior"><span class="material-symbols-outlined">arrow_back</span></button>
+    <figure class="lightbox__figure">
+      <img id="lightbox-img" alt="">
+      <figcaption id="lightbox-caption"></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next round-btn" type="button" data-lb="next" aria-label="Foto siguiente"><span class="material-symbols-outlined">arrow_forward</span></button>
+  </dialog>
 
 </body>
 </html>
